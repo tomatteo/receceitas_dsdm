@@ -1,0 +1,36 @@
+name: receitas
+description: "A new Flutter project."
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^0.8.5+3
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.2.1
+  path: ^1.8.3
+  sqflite: ^2.0.0+4
+  sqflite_common_ffi: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/foto_banner.png
+    - assets/images/miojo.png
+    - assets/images/ovoco.png
+    - assets/images/coca.png
+    - assets/images/pipocasal.png
+    - assets/images/piraoagua.png
+    - assets/images/ovofrito.png
+    - assets/images/gelatina.png
