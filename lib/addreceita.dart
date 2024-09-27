@@ -14,7 +14,7 @@ class _AddReceitaPageState extends State<AddReceitaPage> {
   final _imageController = TextEditingController();
   final _modopreparoController = TextEditingController();
   final _ingredientesController = TextEditingController();
-  File? _imageFile; // Variável para armazenar a imagem
+  File? _imageFile; // armazenar img
 
   final ImagePicker _picker = ImagePicker();
 
@@ -23,8 +23,7 @@ class _AddReceitaPageState extends State<AddReceitaPage> {
     if (pickedFile != null) {
       setState(() {
         _imageFile = File(pickedFile.path);
-        _imageController.text =
-            pickedFile.path; // Atualiza o controller com o caminho da imagem
+        _imageController.text = pickedFile.path;
       });
     }
   }
@@ -43,7 +42,7 @@ class _AddReceitaPageState extends State<AddReceitaPage> {
     }
 
     final receita = Receita(
-      id: 10, // verificar com Heitor
+      id: 0, // verificar com Heitor
       nome: nome,
       image: image,
       modopreparo: modopreparo,

@@ -2,7 +2,7 @@ import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
 Future<Database> getDatabase() async {
-  String caminhoBanco = join(await getDatabasesPath(), 'receitaa.db');
+  String caminhoBanco = join(await getDatabasesPath(), 'receitaav2.db');
 
   return openDatabase(
     caminhoBanco,
